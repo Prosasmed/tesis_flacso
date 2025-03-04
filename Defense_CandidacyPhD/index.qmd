@@ -1,0 +1,651 @@
+---
+title: 'Formando la educación en Latinoamérica'
+subtitle: 'La política del financiamiento educativo'
+author: 'Mtro. Pedro I. Rosas-Medina'
+institute: 'Facultad Latinoamericana de Ciencias Sociales, México'
+date: 02/21/2025
+date-format: MMM D, YYYY
+format:
+  revealjs: 
+    slide-number: false
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    logo: images/flacso_logo.png
+    css: styles.css
+    footer: '[DICS-Ciencia Política](https://www.flacso.edu.mx/de-investigacion-de-ciencias-sociales/)'
+resources:
+  - demo.pdf
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+## Expansión del gasto público educativo {.smaller}
+
+:::columns
+:::{.column width="65%"}
+<img src="images/fig_1.png" style="width:100%; display: block; margin: auto;">
+:::
+
+:::{.column width="35%"}
+<div style="font-size: 0.8em;">
+- ¿Qué explica el crecimiento sostenido del gasto público educativo entre países latinoamericanos desde la década de 1990?
+- ¿Por qué algunos países eligieron expandir el financiamiento de sus sistemas en un momento, mientras otros optaron por reducirlo?
+</div>
+:::
+:::
+
+## Educación básica prioritaria {.smaller}
+
+:::columns
+:::{.column width="65%"}
+```{r, echo=FALSE, fig.align="center", out.width="100%", fig.height=7}
+source('graficas_defensa.R')
+plot1
+```
+:::
+
+:::{.column width="35%"}
+<div style="font-size: 0.8em;">
+- ¿Qué determina la priorización del financiamiento del subsistema de enseñanza básico sobre la formación superior, profesional, técnica o vocacional?
+</div>
+:::
+:::
+
+## Explicaciones alternativas {.smaller .scrollable transition="slide"}
+
+::: panel-tabset
+### Democracia
+
+```{r, echo=FALSE, fig.align="center", out.width="100%"}
+source('graficas_defensa.R')
+plot2
+```
+
+### Cobertura
+
+```{r, echo=FALSE, fig.align="center", out.width="100%"}
+source('graficas_defensa.R')
+plot3
+```
+
+### Ideología
+
+<img src="images/fig_4.png" style="width:75%; display: block; margin: auto;">
+
+:::
+
+## Argumento {.smaller}
+
+![](images/arg1.png)
+
+## Argumento {.smaller}
+
+![](images/arg2.png)
+
+## Argumento {.smaller}
+
+![](images/arg3.png)
+
+## Hipótesis {.smaller transition="slide"}
+
+<img src="images/Expect1.png" style="width:100%; display: block; margin: auto;">
+
+:::{.incremental}
+- Los gobiernos de derecha elevarán el gasto público educativo -reduciendo diferencias en niveles de financiamiento esperados en sus contrapartes de izquierda- en la medida en que la globalización se intensifique.
+  
+- Los gobiernos de derecha priorizarán el financiamiento en niveles del subsistema de enseñanza básico, en la medida en que la globalización incremente.
+:::
+
+## Argumento {.smaller transition="fade"}
+
+![](images/arg4.png)
+
+## Argumento {.smaller transition="fade"}
+
+![](images/arg5.png)
+
+## Hipótesis (2) {.smaller transition="slide"}
+
+<img src="images/Expect2.png" style="width:100%; display: block; margin: auto;">
+
+## Variables dependientes {.smaller}
+
+::: incremental
+-   Gasto público educativo **total**:
+    -   Proporción del PIB destinado al sector público educativo.
+-   Gasto público en el subsistema de **enseñanza básica**.
+    -   $\%$ PIB destinado a la educación inicial, preescolar, primaria
+        y secundaria.
+-   Gasto público en la **formación postsecundaria** técnica, vocacional
+    y superior.
+    -   $\%$ PIB destinado a los niveles formativos.
+:::
+
+<!-- Texto plano que aparece después de todos los bullets -->
+
+::: {.fragment style="margin-top: 4em;"}
+En los tres casos, se toma información del [*World Bank EdStats
+Portal*](https://datatopics.worldbank.org/education/).
+:::
+
+## Variables independientes {.smaller}
+
+::: incremental
+-   Ideología política gubernamental:
+    -   Posición ideológica del gobierno en un continuo *izquierda* -
+        *derecha*.
+    -   *Varieties of Party Identity and Organization*
+        ([V-Party](https://www.v-dem.net/data/v-party-dataset/)), del
+        instituto *Varieties of Democracy*
+        ([V-Dem](https://www.v-dem.net)).
+-   Globalización.
+    -   Nivel en que un país se encuentra integrado a la economía
+        global, en términos financieros y de comercio.
+    -   [KOF *Economic Globalisation
+        Index*](https://kof.ethz.ch/en/data/kof-time-series-database.html).
+-   Fuerza política sindical
+    -   Independencia del(los) sindicato(s) del sector público educativo
+        respecto autoridades políticas centrales y/o subnacionales.
+    -   *Varieties of Political Indocrination in Education and the
+        Media*
+        ([V-Indoc](https://www.v-dem.net/our-work/collaborations/varieties-of-indoctrination/)),
+        del instituto ([V-Dem](https://www.v-dem.net)).
+:::
+
+## Variables de control {.scrollable}  
+
+<div style="font-size: 0.55em;">
+
+::: incremental
+-   Presión demográfica hacia la provisión educativa.
+    -   Proporción de la población menor a 15 años.
+    -   [*World Bank EdStats Portal*](https://datatopics.worldbank.org/education/).
+-   Tamaño de la población.
+    -   Logaritmo natural del total de habitantes de cada país.
+    -   [Banco Mundial](https://data.worldbank.org/indicator/SP.POP.TOTL).
+-   Desarrollo económico.
+    -   PIB per cápita.
+    -   [Household Consumption Data and Statistics from the World Bank](https://data.worldbank.org/indicator/NE.CON.PRVT.CD).
+-   Volatilidad económica sobre el gasto gubernamental.
+    -   Tasa de crecimiento anual del PIB.
+    -   [Household Consumption Data and Statistics from the World Bank](https://data.worldbank.org/indicator/NE.CON.PRVT.CD).
+-   Tendencia de consumo gubernamental.
+    -   Gasto gubernamental público (proporción del PIB) excluyendo educación.
+    -   [Banco Mundial](https://data.worldbank.org/indicator/NE.CON.PRVT.CD).
+:::
+
+</div>
+
+
+## Modelo 1
+
+::: {style="position: relative; height: 2em;"}
+<!-- Modelo 1: Visible desde el inicio (estático) -->
+
+[$$
+  \small
+  \color{firebrick}{Y_{it}^{j}} = \beta_{0} + \beta_{1}\color{dodgerblue}{Ideo_{it}} + \mathbf{X}_{it}\gamma + \alpha_{i} + \delta_{t} + \epsilon_{it}
+  $$]{#model1 style="position: absolute;"}
+:::
+
+<!-- Primer conjunto de Bullets explicativos: Aparecen al hacer clic -->
+
+::: {.fragment data-fragment-index="1" style="margin-top: 4em;"}
+<ul>
+
+<li>$\color{firebrick}{Y_{it}^j}$: variable dependiente para el país $i$
+en el año $t$.</li>
+
+<li>$\color{dodgerblue}{Ideo_{it}}$: posición ideológica del gobierno
+$i$ en el año $t$.</li>
+
+<li>$\mathbf{X}_{it}$: conjunto de variables de control.</li>
+
+<li>$\alpha_{i}$: efectos fijos nivel país.</li>
+
+<li>$\delta_{t}$: efectos fijos de tiempo.</li>
+
+</ul>
+:::
+
+## Modelo 2
+
+::: {style="position: relative; height: 2em;"}
+<!-- Modelo 2: Aparece en el segundo clic en el mismo lugar -->
+
+[$$
+  \small
+  \color{firebrick}{Y_{it}^{j}} = \beta_{0} + \beta_{1}\color{dodgerblue}{Ideo_{it}} + \beta_{2}\color{forestgreen}{Glb_{it}} + \beta_{3}(\color{chocolate}{Ideo_{it} \times Glb_{it}})
+  + \mathbf{X}_{it}\gamma + \\
+  + \alpha_{i} + \delta_{t} + \epsilon_{it}
+  $$]{style="position: absolute;"}
+:::
+
+<!-- Segundo conjunto de Bullets explicativos: Aparecen al hacer clic -->
+
+::: {.fragment data-fragment-index="1" style="margin-top: 4em;"}
+<ul>
+
+<li>$\color{firebrick}{Y_{it}^j}$: variable dependiente para el país $i$
+en el año $t$.</li>
+
+<li>$\color{dodgerblue}{Ideo_{it}}$: posición ideológica del gobierno
+$i$ en el año $t$.</li>
+
+<li>$Glb_{it}$: nivel de globalización.</li>
+
+<li>$\color{chocolate}{Ideo_{it} \times Glb_{it}}$: interacción entre
+ideología y globalización.</li>
+
+</ul>
+:::
+
+## Modelo 3 {.scrollable}
+
+::: {style="position: relative; height: 2em;"}
+<!-- Modelo 3: Aparece en el segundo clic en el mismo lugar -->
+
+[$$
+  \small
+  \color{firebrick}{Y_{it}^{j}} = \beta_{0} + \mathbf{\beta}^{\top}\mathbf{Z}_{it} + \beta_{4}(\color{chocolate}{Ideo_{it} \times Glb_{it} \times Sind_{it}}) + \\ \theta^{\top}\mathbf{W}_{it} + \gamma^{\top}\mathbf{X}_{it} + \alpha_{i} + \delta_{t} + \epsilon_{it}
+  $$]{style="position: absolute;"}
+:::
+
+<!-- Tercer conjunto de Bullets explicativos: Aparecen al hacer clic -->
+
+::: {.fragment data-fragment-index="1" style="margin-top: 4em;"}
+<ul>
+
+<li>[$\color{firebrick}{Y_{it}^j}$: variable dependiente para el país
+$i$ en el año $t$.]{style="font-size: 0.75em;"}</li>
+
+<li>[$\mathbf{Z}_{it}$: es un vector de variables independientes
+principales ($\color{dodgerblue}{Ideo_{it}}$,
+$\color{forestgreen}{Glb_{it}}$ y $\color{forestgreen}{Sind_{it}}$, con
+coeficientes agrupados en el vector
+$\beta^{\top}$).]{style="font-size: 0.75em;"}</li>
+
+<li>[$\beta_{4}$: es el coeficiente asociado a la interacción triple
+($\color{chocolate}{Ideo_{it} \times Glb_{it} \times Sind_{it}}$).]{style="font-size: 0.75em;"}</li>
+
+<li>[$\mathbf{W}_{it}$: vector de interacciones dobles entre las
+variables principales.]{style="font-size: 0.75em;"}</li>
+
+<li>[$\mathbf{X}_{it}$: es un vector de variables de
+control.]{style="font-size: 0.75em;"}</li>
+
+</ul>
+:::
+
+## Resultados {.smaller transition="slide"}
+
++-------------------+----------------+----------------+----------------+
+|                   | ***A***        | ***B***        | ***C***        |
++===================+:==============:+:==============:+:==============:+
+| Ideología del     | $0.00\\(0.02)$ | $0.00\\(0.02)$ | $0.3           |
+| gobierno          |                |                | 8^{*}\\(0.17)$ |
++-------------------+----------------+----------------+----------------+
+| Globalización     |                | $0.04\\(0.03)$ | $0.1           |
+|                   |                |                | 1^{*}\\(0.05)$ |
++-------------------+----------------+----------------+----------------+
+| Ideología         |                |                | $0.0           |
+| $\times$          |                |                | 1^{*}\\(0.01)$ |
+| globalización     |                |                |                |
++-------------------+----------------+----------------+----------------+
+|                   |                |                |                |
++-------------------+----------------+----------------+----------------+
+
+: Gasto educativo: ideología y globalización
+
+::: {style="display: block; text-align: center; font-size: 0.8em; margin-top: -0.5em;"}
+<em>$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$</em>. <br> <b>Nota:</b>
+Errores estándar robustos entre paréntesis.
+:::
+
+## Efectos marginales condicionales {.smaller transition="fade"}
+
+```{r, echo=FALSE, fig.align="center", out.width="100%"}
+source('graficas_defensa.R')
+cme_h1_full
+```
+
+## Efectos marginales condicionales {.smaller transition="fade"}
+
+```{r, echo=FALSE, fig.align="center", out.width="100%"}
+source('graficas_defensa.R')
+cme_h1_full2
+```
+
+## Efectos marginales condicionales {.smaller transition="fade"}
+
+```{r, echo=FALSE, fig.align="center", out.width="100%"}
+source('graficas_defensa.R')
+cme_h1_full3
+```
+
+## Gasto entre niveles educativos {.smaller}
+
+<table style="border-collapse: collapse; width: 100%;">
+  <caption style="caption-side: top; text-align: center; font-weight: bold; margin-bottom: 10px;">
+    Gasto público educativo: subsistema básico y superior
+  </caption>
+  <thead>
+    <!-- Primera fila: cabecera de grupos -->
+    <tr>
+      <th></th>
+      <th colspan="3" style="text-align: center; border-bottom: 1px solid black;">Educación básica</th>
+      <th colspan="3" style="text-align: center; border-bottom: 1px solid black;">Educación superior</th>
+    </tr>
+    <!-- Segunda fila: nombres de los modelos -->
+    <tr>
+      <th></th>
+      <th style="text-align: center;">*A*</th>
+      <th style="text-align: center;">*B*</th>
+      <th style="text-align: center;">*C*</th>
+      <th style="text-align: center;">*D*</th>
+      <th style="text-align: center;">*E*</th>
+      <th style="text-align: center;">*F*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Fila 1: Ideología del gobierno -->
+    <tr>
+      <td>Ideología del gobierno</td>
+      <td>$0.02$<br>$(0.01)$</td>
+      <td>$0.02$<br>$(0.01)$</td>
+      <td>$-0.06^{*}$<br>$(0.03)$</td>
+      <td>$-0.00$<br>$(0.03)$</td>
+      <td>$-0.00$<br>$(0.0)$</td>
+      <td>$0.04^{*}$<br>$(0.02)$</td>
+    </tr>
+    <!-- Fila 2: Globalización -->
+    <tr>
+      <td>Globalización</td>
+      <td></td>
+      <td>$0.01^{*}$<br>$(0.01)$</td>
+      <td>$0.00$<br>$(0.01)$</td>
+      <td></td>
+      <td>$-0.01$<br>$(0.01)$</td>
+      <td>$-0.01^{*}$<br>$(0.01)$</td>
+    </tr>
+    <!-- Fila 3: Interacción Ideología x Globalización (última fila con borde inferior) -->
+    <tr style="border-bottom: 1px solid black;">
+      <td>Ideología &times; Globalización</td>
+      <td></td>
+      <td></td>
+      <td>$0.05^{***}$<br>$(0.05)$</td>
+      <td></td>
+      <td></td>
+      <td>$-0.01^{*}$<br>$(0.00)$</td>
+    </tr>
+  </tbody>
+</table>
+
+
+::: {style="display: block; text-align: center; font-size: 0.8em; margin-top: -0.0em;"}
+<em>$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$</em>. <br> <b>Nota:</b>
+Errores estándar robustos entre paréntesis.
+:::
+
+## Efectos marginales condicionales {.smaller}
+
+```{r, echo=FALSE, fig.align="center", out.width="100%"}
+source('graficas_defensa.R')
+cme_h2
+```
+
+## Resultados (3) {.scrollable}
+
+<table style="width: 100%; font-size: 0.58em; text-align: center; border-collapse: collapse;">
+<caption style="caption-side: top; text-align: center; font-weight: bold; margin-bottom: 10px;">
+    Gasto público educativo: idelogía, globalización y sindicalismo
+  </caption>
+<thead>
+<tr>
+    <th style="font-weight: bold; font-style: italic; text-align: center;"> </th>
+    <th style="font-weight: bold; font-style: italic; text-align: center;"><em>A</em></th>
+    <th style="font-weight: bold; font-style: italic; text-align: center;"><em>B</em></th>
+    <th style="font-weight: bold; font-style: italic; text-align: center;"><em>C</em></th>
+    <th style="font-weight: bold; font-style: italic; text-align: center;"><em>D</em></th>
+    <th style="font-weight: bold; font-style: italic; text-align: center;"><em>E</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td>Ideología del gobierno</td>
+    <td>$-0.01$<br>$(0.02)$</td>
+    <td></td>
+    <td></td>
+    <td>$0.00$<br>$(0.02)$</td>
+    <td>$1.53^{**}$<br>$(0.58)$</td>
+</tr>
+<tr>
+    <td>Globalización</td>
+    <td></td>
+    <td>$-0.00$<br>$(0.03)$</td>
+    <td></td>
+    <td>$0.04$<br>$(0.05)$</td>
+    <td>$0.36^{***}$<br>$(0.10)$</td>
+</tr>
+<tr>
+    <td>Sindicalismo</td>
+    <td></td>
+    <td></td>
+    <td>$0.55^{***}$<br>$(0.16)$</td>
+    <td>$-1.01^{**}$<br>$(0.37)$</td>
+    <td>$14.88^{*}$<br>$(7.30)$</td>
+</tr>
+<tr>
+    <td>Ideología $\times$ globalización</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>$-0.03^{**}$<br>$(0.01)$</td>
+</tr>
+<tr>
+    <td>Ideología $\times$ sindicalismo</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>$-1.29^{*}$<br>$(0.58)$</td>
+</tr>
+<tr>
+    <td>Globalización $\times$ sindicalismo</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>$-0.27^{*}$<br>$(0.11)$</td>
+</tr>
+<tr>
+    <td>Ideología $\times$ Globalización $\times$ Sindicalismo</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>$0.02^{*}$<br>$(0.01)$</td>
+</tr>
+</tbody>
+</table>
+
+::: {style="display: block; text-align: center; font-size: 0.4em; margin-top: -0.5em;"}
+<em>$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$</em>. <br> <b>Nota:</b>
+Errores estándar robustos entre paréntesis.
+:::
+
+## Efectos marginales condicionales (3) {.smaller}
+
+```{r, echo=FALSE, fig.align="center", out.width="100%"}
+source('graficas_defensa.R')
+cme_h3twE
+```
+
+## Resultados (4) {.scrollable}
+
+<table style="border-collapse: collapse; width: auto; font-size: 0.5em;">
+  <caption style="caption-side: top; text-align: center; font-weight: bold; margin-bottom: 10px;">
+    Gasto público educativo: subsistema básico y superior
+  </caption>
+  <thead>
+    <!-- Primera fila: cabecera de grupos -->
+    <tr>
+      <th></th>
+      <th colspan="3" style="text-align: center; border-bottom: 1px solid black;">Educación básica</th>
+      <th colspan="3" style="text-align: center; border-bottom: 1px solid black;">Educación superior</th>
+    </tr>
+    <!-- Segunda fila: nombres de los modelos -->
+    <tr>
+      <th></th>
+      <th style="text-align: center;">*A*</th>
+      <th style="text-align: center;">*B*</th>
+      <th style="text-align: center;">*C*</th>
+      <th style="text-align: center;">*D*</th>
+      <th style="text-align: center;">*E*</th>
+      <th style="text-align: center;">*F*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Fila 1: Ideología del gobierno -->
+    <tr>
+      <td>Ideología del gobierno</td>
+      <td>$0.01$<br>$(0.01)$</td>
+      <td>$0.03$<br>$(0.23)$</td>
+      <td>$-2.60^{*}$<br>$(1.15)$</td>
+      <td>$0.00$<br>$(0.01)$</td>
+      <td>$0.00$<br>$(0.01)$</td>
+      <td>$-2.07^{*}$<br>$(0.91)$</td>
+    </tr>
+    <!-- Fila 2: Globalización -->
+    <tr>
+      <td>Globalización</td>
+      <td></td>
+      <td>$0.05^{*}$<br>$(0.25)$</td>
+      <td>$-0.44^{*}$<br>$(0.20)$</td>
+      <td></td>
+      <td>$0.07^{*}$<br>$(0.04)$</td>
+      <td>$-0.41^{*}$<br>$(0.18)$</td>
+    </tr>
+    <!-- Fila 3: Sindicalismo (última fila con borde inferior) -->
+    <tr style="border-bottom: 1px solid black;">
+      <td>Sindicalismo</td>
+      <td></td>
+      <td>$-1.06^{***}$<br>$(0.16)$</td>
+      <td>$-33.53^{*}$<br>$(13.95)$</td>
+      <td></td>
+      <td>$-1.84^{***}$<br>$(0.51)$</td>
+      <td>$-34.19^{**}$<br>$(11.02)$</td>
+    </tr>
+    <!-- Fila 4: Interacción entre ideología y globalización -->
+    <tr>
+      <td>Ideología &times; Globalización</td>
+      <td></td>
+      <td></td>
+      <td>$0.04^{*}$<br>$(0.02)$</td>
+      <td></td>
+      <td></td>
+      <td>$0.03^{*}$<br>$(0.01)$</td>
+    </tr>
+    <!-- Fila 5: Interacción Ideología x Sindicalismo -->
+    <tr>
+      <td>Ideología &times; Sindicalismo</td>
+      <td></td>
+      <td></td>
+      <td>$2.67^{*}$<br>$(1.11)$</td>
+      <td></td>
+      <td></td>
+      <td>$2.16^{*}$<br>$(0.89)$</td>
+    </tr>
+    <!-- Fila 6: Interacción Globalización x Sindicalismo -->
+    <tr>
+      <td>Globalización &times; Sindicalismo</td>
+      <td></td>
+      <td></td>
+      <td>$0.46^{*}$<br>$(0.20)$</td>
+      <td></td>
+      <td></td>
+      <td>$0.48^{*}$<br>$(0.16)$</td>
+    </tr>
+    <!-- Fila 7: Ideología x Globalización x Sindicalismo -->
+    <tr>
+      <td>Ideología &times; Globalización &times; Sindicalismo</td>
+      <td></td>
+      <td></td>
+      <td>$-0.04^{*}$<br>$(0.02)$</td>
+      <td></td>
+      <td></td>
+      <td>$-0.03^{*}$<br>$(0.01)$</td>
+    </tr>
+  </tbody>
+</table>
+
+::: {style="display: block; text-align: center; font-size: 0.4em; margin-top: -0.0em;"}
+<em>$^{***}p<0.001$; $^{**}p<0.01$; $^{*}p<0.05$</em>. <br> <b>Nota:</b>
+Errores estándar robustos entre paréntesis.
+:::
+
+## Efectos marginales condicionales (4) {.smaller}
+
+```{r, echo=FALSE, fig.align="center", out.width="100%"}
+source('graficas_defensa.R')
+cme_h4twE
+```
+
+## Efectos marginales condicionales (5) {.smaller}
+
+```{r, echo=FALSE, fig.align="center", out.width="100%"}
+source('graficas_defensa.R')
+cme_h4twJ
+```
+
+## Estudio cualitativo
+
+:::{.incremental}
+- Chile, México y Paraguay.
+- Derecha en el gobierno<span class="fragment" style="color:firebrick;">, exceptuando Chile</span>.
+- Niveles de globalización muy similares.
+:::
+
+## Estudio cualitativo (2)
+
+```{r, echo=FALSE, fig.align="center", out.width="100%"}
+source('graficas_defensa.R')
+plot_semi
+```
+
+## Estudio cualitativo (3)
+
+```{r, echo=FALSE, fig.align="center", out.width="100%"}
+source('graficas_defensa.R')
+plot_final
+```
+
+## Conclusiones
+
+:::{.incremental}
+- El efecto de la posición ideológica gubernamental sobre el gasto es condicional.
+- ¿Abrir la economía a los mercados internacionales entre gobiernos de derecha, es contraproducente hacia el gasto público educativo?
+  - Sí, pero solo sobre la proporción total del PIB destinado a la educación.
+  - La globalización condiciona a los gobiernos de derecha para expandir el gasto público educativo entre niveles del subsistema de enseñanza básico.
+:::
+
+## Conclusiones (2)
+
+:::{.incremental}
+- ¿Y qué pasa con el sindicalismo?
+- En un contexto de creciente globalización, bajo administraciones de derecha, la autonomía sindical sería contraproducente sobre el gasto público educativo total...
+  - Pero no sobre el financiamiento del subsistema de enseñanza básico.
+:::
+
+## Conclusiones (3)
+
+:::{.incremental}
+- Entonces, ¿qué está sucediendo?
+  - Ralentizar el crecimiento del gasto público educativo total entre gobiernos ideológicamente de derecha, no implica -necesariamente- reducir la proporción del gasto entre niveles del subsistema básico.
+  - Mayor participación privada entre niveles superiores.
+:::
+
+# ¡Muchas gracias!
