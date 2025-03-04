@@ -1,8 +1,0 @@
-# tesis_flacso
-El propósito de este repositorio es compartir datos, código, presentaciones, y avanceses en el desarrollo escrito de mi tesis doctoral, "Formandotelo la educación en Latinoamérica: la política del financiamiento educativo", parte de mi Doctorado en Ciencias Sociales, con mención en Ciencia Política, y especialidad en Economía Política Comparada en FLACSO México.
-
-El repositorio cuenta con tres carpetas. Particularmente, la carpeta de presentaciónes contiene cada LaTeX script, y archivos .qmd relacionados a las presentaciones utilizadas al momento de mostrar mis avances frente a mi comité doctora. La carpeta de desarrollos contiene las versiones más recientes de mi avancese escrito; y, por último, la carpeta "tesis_doctorado", contiene el proyecto "Rproj" con todo lo necesario para reproducir la limpieza de bases de datos, así como las diferentes estimaciones econométricas de mi investigación. 
-
-The purpose of this repository is to share data, code, presentations, and progress in the written development of my doctoral thesis, "Shaping Education in Latin America: The Politics of Educational Financing," part of my Doctorate in Social Sciences, with a specialization in Political Science and Comparative Political Economy at FLACSO Mexico.
-
-The repository contains three folders. In particular, the "presentations" folder includes each LaTeX script and .qmd files related to the presentations used when presenting my progress to my doctoral committee. The "developments" folder contains the most recent versions of my written progress; and finally, the "tesis_doctorado" folder contains the "Rproj" project with everything needed to reproduce the database cleaning process, as well as the different econometric estimations of my research. 
